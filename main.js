@@ -1,10 +1,10 @@
 
 
-let b = Number(prompt("Ingrese la base del rectangulo", 1));
-let h = Number(prompt("Ingrese la altura del rectangulo", 1));
-function formulaAreaRectangulo(base, altura, imagen="imagenes/Rectangulo.png"){
+let b = Number(prompt("Ingrese la base del triangulo", 1));
+let h = Number(prompt("Ingrese la altura del triangulo", 1));
+function formulaAreaTriangulo(base, altura, imagen="imagenes/triangulo.png"){
     document.body.insertAdjacentHTML("afterbegin", `<img src="${imagen}">`);
-    return base * altura;
+    return base * altura / 2;
 }
-console.log(`El Area del Rectangulo es: ${formulaAreaRectangulo(b, h)}`);
+console.log(`El Area del Triangulo es: ${formulaAreaTriangulo(b, h)}`);
 
